@@ -3,17 +3,26 @@
 \name{lib_summary}
 \alias{lib_summary}
 \title{R Library Summary
-BLAH BLAH BLAH}
+Provides a brief summary of the package libraries
+on your machine
+@param sizes A logical value indicating whether to calculate sizes
+Default \code{FALSE}}
 \usage{
-lib_summary()
+lib_summary(sizes = FALSE)
 }
 \value{
-a \code{data.frame}  blah
+a \code{data.frame}  containing the count of packages in each of the
+user's libraries.  If \code{sizes=TRUE}, a column of
+library sizes will be added.
 }
 \description{
 R Library Summary
-BLAH BLAH BLAH
+Provides a brief summary of the package libraries
+on your machine
+@param sizes A logical value indicating whether to calculate sizes
+Default \code{FALSE}
 }
 \examples{
 lib_summary()
+lib_summary(sizes=TRUE)
 }
