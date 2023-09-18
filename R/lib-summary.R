@@ -1,3 +1,10 @@
+#' R Library Summary
+#'  BLAH BLAH BLAH
+#' @return a `data.frame`  blah
+#' @export
+#'
+#' @examples
+#' lib_summary()
 lib_summary <- function() {
   pkgs <- utils::installed.packages()
   pkg_tbl <- table(pkgs[, "LibPath"])
